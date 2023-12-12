@@ -1,0 +1,23 @@
+[
+    {
+        "id" : "1",
+        "nome": "Smartphone X",
+        "preco": "R$ 2000,00",
+        "quantidade": "10"
+    },
+
+    {
+        "id" : "2",
+        "nome": "Xbox One Series X",
+        "preco": "R$ 3500,00",
+        "quantidade": "20"
+    },
+
+    {
+        "id" : "3",
+        "nome": "Playstation 5",
+        "preco": "R$ 3600,00",
+        "quantidade": "15"
+    }
+
+]

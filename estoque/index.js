@@ -6,7 +6,7 @@ const port = 8001;
 
 app.use(bodyParser.json());
 
-let estoque = {};
+const estoque = require('./estoque.json');
 
 app.post('/adicionar-estoque', (req, res) => {
   const { produto, quantidade } = req.body;
@@ -17,8 +17,9 @@ app.post('/adicionar-estoque', (req, res) => {
     estoque[produto] += quantidade;
   }
 
-  const pedidoId = Math.floor(Math.random() * 1000);
+  const pedidoId = proximoIdPedido++;
   res.json({ id: pedidoId });
+
 });
 
 app.listen(port, () => {
