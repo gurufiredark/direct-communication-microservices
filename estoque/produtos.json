@@ -1,1 +1,23 @@
-{"produtos":[{"id":1,"nome":"Iphone X","preco":3000,"quantidade":7},{"id":2,"nome":"Xbox One Series X","preco":3500,"quantidade":20},{"id":3,"nome":"Playstation 5","preco":3600,"quantidade":13}]}
+{
+    "produtos":[
+        
+        {
+            "id":1,
+            "nome":"Iphone X",
+            "preco":3000,
+            "quantidade":7
+        },
+        {
+            "id":2,
+            "nome":"Xbox One Series X",
+            "preco":3500,
+            "quantidade":20
+        },
+        {
+            "id":3,
+            "nome":"Playstation 5",
+            "preco":3600,
+            "quantidade":13
+        }
+    ]
+}
