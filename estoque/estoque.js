@@ -16,14 +16,12 @@ app.get('/produtos', (req, res) => {
 
 app.post('/atualizar-estoque', (req, res) => {
   const { id, quantidade } = req.body;
-  console.log(id, quantidade);
   const produto = estoque.produtos.find((product) => product.id === id);
-  console.log(produto)
 
   if (produto && produto.quantidade >= quantidade) {
     produto.quantidade -= quantidade;
 
-    // Atualizar o arquivo JSON
+    // Atualiza o arquivo JSON
     fs.writeFileSync('produtos.json', JSON.stringify(estoque));
 
     res.json({ mensagem: 'Estoque atualizado com sucesso!' });
